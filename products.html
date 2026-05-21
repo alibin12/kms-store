@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop All Products - KMS Departmental Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏪</text></svg>">
+</head>
+<body data-page="products">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">🏪</div>
+                <span>KMS Store</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="products.html?category=offers">Offers</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" class="cart-icon">
+                    🛒 <span class="cart-count">0</span>
+                </a></li>
+            </ul>
+            <button class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Products Section -->
+    <section class="products-section" style="margin-top: 2rem;">
+        <div class="products-header">
+            <h1 class="section-title" style="margin:0">🛍️ All Products</h1>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <select id="category-filter" class="sort-select">
+                    <option value="all">All Categories</option>
+                    <option value="groceries">🍚 Groceries</option>
+                    <option value="snacks">🥨 Snacks</option>
+                    <option value="juices">🧃 Juices & Beverages</option>
+                    <option value="toys">🧸 Toys</option>
+                    <option value="essentials">🧼 Essentials</option>
+                </select>
+                <select id="sort-select" class="sort-select">
+                    <option value="relevance">Sort by: Relevance</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="name">Name: A-Z</option>
+                </select>
+            </div>
+        </div>
+        <div class="products-grid" id="products-grid"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>KMS Departmental Store</h3>
+                <p>Your neighborhood store for all daily needs.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>📍 Main Road, Near Bus Stand</p>
+                <p>📞 98765 43210</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 KMS Departmental Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

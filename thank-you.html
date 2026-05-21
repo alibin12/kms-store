@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - KMS Departmental Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎉</text></svg>">
+</head>
+<body data-page="thankyou">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">🏪</div>
+                <span>KMS Store</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="products.html?category=offers">Offers</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" class="cart-icon">
+                    🛒 <span class="cart-count">0</span>
+                </a></li>
+            </ul>
+            <button class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Thank You Section -->
+    <div class="thank-you">
+        <div class="thank-you-icon">🎉</div>
+        <h1>Thank You for Your Order!</h1>
+        <p>
+            Your order has been sent to us via WhatsApp and Email. 
+            We will confirm your order shortly and prepare it for pickup/delivery.
+        </p>
+        <div style="background: var(--light); padding: 1.5rem; border-radius: var(--radius); max-width: 500px; margin-bottom: 2rem;">
+            <h3 style="color: var(--primary); margin-bottom: 1rem;">📋 What happens next?</h3>
+            <ol style="text-align: left; color: var(--gray); line-height: 2;">
+                <li>We will review your order and confirm via WhatsApp</li>
+                <li>Your items will be packed and kept ready</li>
+                <li>Visit the store for pickup or wait for delivery</li>
+                <li>Pay cash on pickup/delivery</li>
+            </ol>
+        </div>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+            <a href="products.html" class="continue-shopping">Continue Shopping</a>
+            <a href="contact.html" class="continue-shopping" style="background: var(--secondary);">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>KMS Departmental Store</h3>
+                <p>Your neighborhood store for all daily needs.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>📍 Main Road, Near Bus Stand</p>
+                <p>📞 98765 43210</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 KMS Departmental Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

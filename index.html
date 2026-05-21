@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMS Departmental Store - Everything You Need</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏪</text></svg>">
+</head>
+<body data-page="home">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">🏪</div>
+                <span>KMS Store</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="products.html?category=offers">Offers</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" class="cart-icon">
+                    🛒 <span class="cart-count">0</span>
+                </a></li>
+            </ul>
+            <button class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>KMS Departmental Store</h1>
+        <p>Everything you need, under one roof. Fresh groceries, snacks, beverages, toys & daily essentials.</p>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search products... (e.g., rice, juice, toys)">
+            <button onclick="handleSearch()">Search</button>
+        </div>
+    </section>
+
+    <!-- Quick Categories -->
+    <section class="quick-categories">
+        <h2 class="section-title">Shop by Category</h2>
+        <div class="category-grid">
+            <a href="products.html?category=groceries" class="category-card">
+                <div class="category-icon">🍚</div>
+                <h3>Groceries</h3>
+            </a>
+            <a href="products.html?category=snacks" class="category-card">
+                <div class="category-icon">🥨</div>
+                <h3>Snacks</h3>
+            </a>
+            <a href="products.html?category=juices" class="category-card">
+                <div class="category-icon">🧃</div>
+                <h3>Juices</h3>
+            </a>
+            <a href="products.html?category=toys" class="category-card">
+                <div class="category-icon">🧸</div>
+                <h3>Toys</h3>
+            </a>
+            <a href="products.html?category=essentials" class="category-card">
+                <div class="category-icon">🧼</div>
+                <h3>Essentials</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section class="products-section">
+        <h2 class="section-title">🔥 Special Offers</h2>
+        <div id="offers-container"></div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="products-section">
+        <div class="products-header">
+            <h2 class="section-title" style="margin:0">✨ Today's Picks</h2>
+            <a href="products.html" style="color: var(--primary); text-decoration: none; font-weight: 600;">View All →</a>
+        </div>
+        <div class="products-grid" id="featured-products"></div>
+    </section>
+
+    <!-- Store Info -->
+    <section class="store-info">
+        <div class="store-info-content">
+            <div class="info-card">
+                <div class="info-icon">📍</div>
+                <h3>Location</h3>
+                <p>Main Road, Near Bus Stand<br>Easy to find, hard to miss!</p>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">⏰</div>
+                <h3>Open Hours</h3>
+                <p>8:00 AM – 10:00 PM<br>Monday to Sunday</p>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">📞</div>
+                <h3>Quick Order</h3>
+                <p><a href="tel:+919876543210">Call 98765 43210</a><br>Or order via WhatsApp</p>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">💬</div>
+                <h3>WhatsApp</h3>
+                <p><a href="https://wa.me/919876543210" target="_blank">Click to Chat</a><br>Fast response guaranteed</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>KMS Departmental Store</h3>
+                <p>Your neighborhood store for all daily needs. Fresh stock, fair prices, friendly service.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="products.html">Shop All</a>
+                <a href="products.html?category=groceries">Groceries</a>
+                <a href="products.html?category=snacks">Snacks</a>
+                <a href="products.html?category=juices">Beverages</a>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="contact.html">Store Locator</a>
+                <a href="cart.html">My Cart</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>📍 Main Road, Near Bus Stand</p>
+                <p>📞 98765 43210</p>
+                <p>⏰ Open 8 AM - 10 PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 KMS Departmental Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
